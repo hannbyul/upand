@@ -1,3 +1,3 @@
 # Table of contents
 
-* [🍀 upand!](README.md)
+* [🍀 upand](README.md)
