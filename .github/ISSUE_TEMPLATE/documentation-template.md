@@ -1,6 +1,6 @@
 ---
 name: Documentation Template
 about: Issues about documentation
-title: "[documentation/{topic}]"
+title: "[documentation/]"
 labels: "kind: documentation"
 ---
