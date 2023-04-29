@@ -1,6 +1,6 @@
 ---
 name: Bug Template
 about: Issues about bug
-title: "[bug/{topic}]"
-labels: "kind: needs-info"
+title: "[bug/]"
+labels: "bug: needs-info"
 ---
