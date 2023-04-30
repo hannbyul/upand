@@ -13,8 +13,6 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
-      - name: chdir
-        run: cd backend/upand
       - name: Set up JDK 17
         uses: actions/setup-java@v1
         with:
@@ -31,10 +29,8 @@ jobs:
           path: ~/.gradle/caches
           key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle') }}
           restore-keys: ${{ runner.os }}-gradle
-      - name: debug
-        run: ls
-      - name: debug2
-        run: pwd
+      - name: chdir
+        run: cd backend/upand
       - name: Build and analyze
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
