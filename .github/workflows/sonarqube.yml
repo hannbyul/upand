@@ -3,7 +3,7 @@ name: sonarqube
 on:
   push:
     branches:
-      - master
+      - hotfix/sonarqube
 
 jobs:
   build:
@@ -31,6 +31,10 @@ jobs:
           path: ~/.gradle/caches
           key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle') }}
           restore-keys: ${{ runner.os }}-gradle
+      - name: debug
+        run: ls
+      - name: debug2
+        run: pwd
       - name: Build and analyze
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
