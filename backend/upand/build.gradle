@@ -7,8 +7,8 @@ plugins {
 
 sonar {
   properties {
-    property "sonar.projectKey", "upand"
-    property "sonar.projectName", "upand"
+    property "sonar.projectKey", "upand-backend"
+    property "sonar.projectName", "upand-backend"
   }
 }
 
