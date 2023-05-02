@@ -1,9 +1,15 @@
 name: sonarqube-backend
 
 on:
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: "Log level"
+        required: false
+        default: "info"
   push:
     branches:
-      - feature/sonarqube-all
+      - master
 
 jobs:
   build:
