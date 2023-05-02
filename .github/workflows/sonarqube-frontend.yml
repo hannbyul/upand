@@ -22,8 +22,6 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: "16.x"
-      - run: npm ci
-        working-directory: frontend/
       - uses: sonarsource/sonarqube-scan-action@master
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN_FRONTEND }}
