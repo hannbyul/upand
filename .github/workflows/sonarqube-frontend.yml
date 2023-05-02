@@ -9,7 +9,7 @@ on:
         default: "info"
   push:
     branches:
-      - hotfix/sonarqube-npm
+      - master
 
 jobs:
   build:
