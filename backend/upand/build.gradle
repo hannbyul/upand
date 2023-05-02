@@ -7,8 +7,8 @@ plugins {
 
 sonar {
   properties {
-    property "sonar.projectKey", "upand"
-    property "sonar.projectName", "upand"
+    property "sonar.projectKey", "upand-backend"
+    property "sonar.projectName", "upand-backend"
   }
 }
 
@@ -29,8 +29,8 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-	implementation 'org.flywaydb:flyway-core'
-	implementation 'org.flywaydb:flyway-mysql'
+	// implementation 'org.flywaydb:flyway-core'
+	// implementation 'org.flywaydb:flyway-mysql'
 	compileOnly 'org.projectlombok:lombok'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	runtimeOnly 'com.mysql:mysql-connector-j'
@@ -38,6 +38,6 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
-tasks.named('test') {
-	useJUnitPlatform()
-}
+// tasks.named('test') {
+// 	useJUnitPlatform()
+// }
