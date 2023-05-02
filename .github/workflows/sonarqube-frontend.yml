@@ -9,7 +9,7 @@ on:
         default: "info"
   push:
     branches:
-      - feature/sonarqube
+      - master
 
 jobs:
   build:
